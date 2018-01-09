@@ -11,10 +11,10 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   
-  <url>https://samkruglov.wordpress.com/2018/01/07/json-filterring-with-spring/</url>
+  <url>https://samkruglov.wordpress.com/2018/01/07/json-filtering-with-spring/</url>
   
   <groupId>com.samkruglov</groupId>
-  <artifactId>json-filterring-with-spring</artifactId>
+  <artifactId>json-filtering-with-spring</artifactId>
   <version>1.0-SNAPSHOT</version>
   
   <properties>
