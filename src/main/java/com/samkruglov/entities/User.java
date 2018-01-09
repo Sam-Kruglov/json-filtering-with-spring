@@ -25,8 +25,8 @@ public class User implements Identifiable<Long> {
     @Column(name = "first_name", nullable = false)
     private String firstName;
     
-    @Column(name = "second_name", nullable = false)
-    private String secondName;
+    @Column(name = "last_name", nullable = false)
+    private String lastName;
     
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
     private Group group;
@@ -34,11 +34,11 @@ public class User implements Identifiable<Long> {
     /**
      * A user may only exist with all first and second names and the username.
      */
-    public User(final String username, final String firstName, final String secondName) {
+    public User(final String username, final String firstName, final String lastName) {
         
         this.username = username;
         this.firstName = firstName;
-        this.secondName = secondName;
+        this.lastName = lastName;
     }
     
     /**
@@ -94,9 +94,9 @@ public class User implements Identifiable<Long> {
         return firstName;
     }
     
-    public String getSecondName() {
+    public String getLastName() {
         
-        return secondName;
+        return lastName;
     }
     
     public void setUsername(final String username) {
@@ -109,9 +109,9 @@ public class User implements Identifiable<Long> {
         this.firstName = firstName;
     }
     
-    public void setSecondName(final String secondName) {
+    public void setLastName(final String secondName) {
         
-        this.secondName = secondName;
+        this.lastName = secondName;
     }
     
     /**

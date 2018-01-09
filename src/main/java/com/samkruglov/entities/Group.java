@@ -1,5 +1,6 @@
 package com.samkruglov.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.hateoas.Identifiable;
 
 import javax.persistence.CascadeType;
@@ -96,6 +97,7 @@ public class Group implements Identifiable<Long> {
         return users.remove(user);
     }
     
+    @JsonIgnore//Spring Data REST thinks this is a separate property
     public Set<User> getReadOnlyUsers() {
         
         return Collections.unmodifiableSet(users);

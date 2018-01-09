@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+  
+  <persistence-unit name="NewPersistenceUnit">
+    <!-- THIS FILE IS NOT USED. It is only here to make IDE happy. -->
+  </persistence-unit>
+</persistence>
