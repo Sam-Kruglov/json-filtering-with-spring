@@ -34,8 +34,8 @@
     </role>
     <schema id="8" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-01-09.11:22:06.651</IntrospectionTimestamp>
-      <IntrospectionStateNumber>64985</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-01-09.14:24:08.328</IntrospectionTimestamp>
+      <IntrospectionStateNumber>65027</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -55,55 +55,55 @@
       <ObjectId>12113</ObjectId>
     </schema>
     <sequence id="14" parent="8" name="group_seq">
-      <ObjectId>183642</ObjectId>
-      <StateNumber>64979</StateNumber>
+      <ObjectId>183695</ObjectId>
+      <StateNumber>65021</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
     </sequence>
     <sequence id="15" parent="8" name="user_seq">
-      <ObjectId>183644</ObjectId>
-      <StateNumber>64980</StateNumber>
+      <ObjectId>183697</ObjectId>
+      <StateNumber>65022</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>1</CacheSize>
     </sequence>
     <table id="16" parent="8" name="groups">
-      <ObjectId>183646</ObjectId>
-      <StateNumber>64985</StateNumber>
+      <ObjectId>183699</ObjectId>
+      <StateNumber>65027</StateNumber>
     </table>
     <table id="17" parent="8" name="users">
-      <ObjectId>183651</ObjectId>
-      <StateNumber>64985</StateNumber>
+      <ObjectId>183704</ObjectId>
+      <StateNumber>65027</StateNumber>
     </table>
     <column id="18" parent="16" name="id">
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>64981</StateNumber>
+      <StateNumber>65023</StateNumber>
     </column>
     <column id="19" parent="16" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>64981</StateNumber>
+      <StateNumber>65023</StateNumber>
     </column>
     <index id="20" parent="16" name="groups_pkey">
-      <ObjectId>183649</ObjectId>
+      <ObjectId>183702</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <index id="21" parent="16" name="uk_8mf0is8024pqmwjxgldfe54l7">
-      <ObjectId>183659</ObjectId>
+      <ObjectId>183712</ObjectId>
       <ColNames>name</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="22" parent="16" name="groups_pkey">
-      <ObjectId>183650</ObjectId>
+      <ObjectId>183703</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>groups_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <key id="23" parent="16" name="uk_8mf0is8024pqmwjxgldfe54l7">
-      <ObjectId>183660</ObjectId>
+      <ObjectId>183713</ObjectId>
       <ColNames>name</ColNames>
       <UnderlyingIndexName>uk_8mf0is8024pqmwjxgldfe54l7</UnderlyingIndexName>
     </key>
@@ -111,57 +111,57 @@
       <Position>1</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>64982</StateNumber>
+      <StateNumber>65024</StateNumber>
     </column>
     <column id="25" parent="17" name="first_name">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>64982</StateNumber>
+      <StateNumber>65024</StateNumber>
     </column>
-    <column id="26" parent="17" name="second_name">
+    <column id="26" parent="17" name="last_name">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>64982</StateNumber>
+      <StateNumber>65024</StateNumber>
     </column>
     <column id="27" parent="17" name="username">
       <Position>4</Position>
       <DataType>varchar(16)|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>64982</StateNumber>
+      <StateNumber>65024</StateNumber>
     </column>
     <column id="28" parent="17" name="group_id">
       <Position>5</Position>
       <DataType>bigint|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>64982</StateNumber>
+      <StateNumber>65024</StateNumber>
     </column>
     <index id="29" parent="17" name="users_pkey">
-      <ObjectId>183657</ObjectId>
+      <ObjectId>183710</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <index id="30" parent="17" name="uk_r43af9ap4edm43mmtq01oddj6">
-      <ObjectId>183661</ObjectId>
+      <ObjectId>183714</ObjectId>
       <ColNames>username</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="31" parent="17" name="users_pkey">
-      <ObjectId>183658</ObjectId>
+      <ObjectId>183711</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>users_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
     <key id="32" parent="17" name="uk_r43af9ap4edm43mmtq01oddj6">
-      <ObjectId>183662</ObjectId>
+      <ObjectId>183715</ObjectId>
       <ColNames>username</ColNames>
       <UnderlyingIndexName>uk_r43af9ap4edm43mmtq01oddj6</UnderlyingIndexName>
     </key>
     <foreign-key id="33" parent="17" name="fkemfuglprp85bh5xwhfm898ysc">
-      <ObjectId>183663</ObjectId>
+      <ObjectId>183716</ObjectId>
       <ColNames>group_id</ColNames>
-      <RefTableId>183646</RefTableId>
+      <RefTableId>183699</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>groups</RefTableName>
       <RefKeyName>groups_pkey</RefKeyName>

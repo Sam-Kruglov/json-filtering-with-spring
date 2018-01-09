@@ -26,13 +26,6 @@
   
   <dependencies>
     
-    <!-- this is to not trigger JPA lazy fetch on serialization -->
-    <dependency>
-      <groupId>com.fasterxml.jackson.datatype</groupId>
-      <artifactId>jackson-datatype-hibernate5</artifactId>
-      <!-- version is defined in parent pom -->
-    </dependency>
-    
     <!-- Automatically exports all Spring Data Repositories as REST resources -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
