@@ -6,8 +6,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
 @EnableTransactionManagement
-//@EntityScan(basePackageClasses = User.class)
-//@EnableJpaRepositories(basePackageClasses = UserRepository.class)
 public class Main {
     
     public static void main(String[] args) {
