@@ -1,7 +1,7 @@
 package com.samkruglov.controllers;
 
-import com.samkruglov.dtos.UserDTO;
 import com.samkruglov.entities.User;
+import com.samkruglov.entities.dtos.UserUsername;
 import com.samkruglov.repositories.UserRepository;
 import org.springframework.data.rest.webmvc.RepositoryRestController;
 import org.springframework.data.rest.webmvc.support.RepositoryEntityLinks;
@@ -24,13 +24,13 @@ public class UserController {
     }
     
     @GetMapping("users/search/username")
-    public ResponseEntity<Resource<UserDTO>> addLinksToUserDTO(@RequestParam("id") Long id) {
-        
-        Resource<UserDTO> dtoResource = new Resource<>(userRepository.findById(id));
-        
-        dtoResource.add(links.linkToSearchResource(User.class, "getUsername").withSelfRel());
-        dtoResource.add(links.linkToSingleResource(User.class, id));
-        
-        return ResponseEntity.ok(dtoResource);
+    public ResponseEntity<Resource<UserUsername>> addLinksToUserUsername(@RequestParam("id") Long id) {
+    
+        Resource<UserUsername> usernameResource = new Resource<>(userRepository.findUsernameById(id));
+    
+        usernameResource.add(links.linkToSearchResource(User.class, "getUsername").withSelfRel());
+        usernameResource.add(links.linkToSingleResource(User.class, id));
+    
+        return ResponseEntity.ok(usernameResource);
     }
 }

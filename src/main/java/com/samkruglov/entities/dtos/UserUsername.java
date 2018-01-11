@@ -1,15 +1,15 @@
-package com.samkruglov.dtos;
+package com.samkruglov.entities.dtos;
 
 import java.util.Objects;
 
 /**
  * Only defines a {@link com.samkruglov.entities.User#username username}.
  */
-public class UserDTO {
+public class UserUsername {
     
     private final String username;
     
-    public UserDTO(final String username) {
+    public UserUsername(final String username) {
         
         this.username = username;
     }
@@ -25,8 +25,8 @@ public class UserDTO {
         
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        final UserDTO userDTO = (UserDTO) o;
-        return Objects.equals(username, userDTO.username);
+        final UserUsername userUsername = (UserUsername) o;
+        return Objects.equals(username, userUsername.username);
     }
     
     public String getUsername() {
