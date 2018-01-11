@@ -1,4 +1,4 @@
-package com.samkruglov.config;
+package com.samkruglov.controllers;
 
 import com.samkruglov.dtos.UserDTO;
 import com.samkruglov.entities.User;
