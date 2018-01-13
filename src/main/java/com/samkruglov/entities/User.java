@@ -1,5 +1,6 @@
 package com.samkruglov.entities;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import org.springframework.hateoas.Identifiable;
 
 import javax.persistence.Column;
@@ -13,6 +14,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "users")
+@JsonFilter("userFilter")
 public class User implements Identifiable<Long> {
     
     @Id
